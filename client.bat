@@ -8,11 +8,13 @@ set clientAuthor=RediPanda
 set clientUser=YulxVol Corporations
 set clientVersion=1.0
 
+TITLE %clientName%
+
 CLS
 
 :MENU
 cls
-echo
+echo.
 echo [ YULXVOL CLIENT BOOTSTRAPPER ]
 echo.
 echo.
@@ -28,6 +30,15 @@ IF "%clientSel%"=="1" goto LAUNCHCHECK
 IF "%clientSel%"=="2" goto UPDATECHECK
 IF "%clientSel%"=="3" EXIT
 goto MENU
+
+:SETUP
+CD /D %rootDirectory%
+PUSHD %appdata%
+MD RediPanda
+PUSHD RediPanda
+MD DL
+MD data
+goto INIT
 
 :LAUNCHCHECK
 PUSHD %appdata%

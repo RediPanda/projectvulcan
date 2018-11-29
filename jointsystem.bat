@@ -1,11 +1,11 @@
-set rootManagerDirectory=%cd%
+set rootManagerDirectory=%appdata%/RediPanda/data
 :INIT
 @ECHO OFF
 REM // VARIABLES
 
 set applicationName=YulxVol Server Manager
 set applicationAuthor=RediPanda
-set applicationUser=YulxVol 
+set applicationUser=YulxVol Corporations
 set applicationVersion=1.0
 
 set serverName1=BungeeCord Proxy
@@ -16,9 +16,11 @@ set serverName5=Prison Server
 set serverName6=
 
 
-
+set updateParamater=0
 set updateAddress=
 set updateMessage=[You are currently running the latest version!]
+
+TITLE %applicationName% // By : %applicationAuthor% for %applicationUser%
 
 REM // CHECKLIST
 CD /D %rootDirectory%
@@ -107,15 +109,17 @@ echo.
 echo Running Version: %applicationVersion% 
 echo.
 echo %updateMessage%
+echo.
+echo.
 set /p "userSel=> "
-IF "%cho%"=="1" goto STARTALLMC
-IF "%cho%"=="2" goto UPDATEALLMC
-IF "%cho%"=="3" goto STARTSERVER1
-IF "%cho%"=="4" goto STARTSERVER2
-IF "%cho%"=="5" goto STARTSERVER3
-IF "%cho%"=="6" goto STARTSERVER4
-IF "%cho%"=="7" goto STARTSERVER5
-IF "%cho%"=="8" goto ENDOFFILE
+IF "%userSel%"=="1" goto STARTALLMC
+IF "%userSel%"=="2" goto UPDATEALLMC
+IF "%userSel%"=="3" goto STARTSERVER1
+IF "%userSel%"=="4" goto STARTSERVER2
+IF "%userSel%"=="5" goto STARTSERVER3
+IF "%userSel%"=="6" goto STARTSERVER4
+IF "%userSel%"=="7" goto STARTSERVER5
+IF "%userSel%"=="8" goto ENDOFFILE
 IF "%cho%"=="9" EXIT
 goto MENU
 

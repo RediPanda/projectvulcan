@@ -120,6 +120,9 @@ IF "%userSel%"=="5" goto STARTSERVER3
 IF "%userSel%"=="6" goto STARTSERVER4
 IF "%userSel%"=="7" goto STARTSERVER5
 IF "%userSel%"=="8" goto ENDOFFILE
-IF "%cho%"=="9" EXIT
+IF "%userSel%"=="9" EXIT
 goto MENU
 
+
+REM // DO NOT MODIFY OR TOUCH THIS LINE / DO NOT PUT ANY CODE FURTHER THAN THIS LINE.
+:ENDOFFILE

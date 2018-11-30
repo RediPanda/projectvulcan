@@ -6,7 +6,7 @@ REM // VARIABLES
 set applicationName=YulxVol Server Manager
 set applicationAuthor=RediPanda
 set applicationUser=YulxVol Corporations
-set applicationVersion=1.0
+set applicationVersion=1.1
 
 set serverName1=BungeeCord Proxy
 set serverName2=Hub Server

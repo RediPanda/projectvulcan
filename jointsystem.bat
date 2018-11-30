@@ -15,6 +15,8 @@ set serverName4=Creative Server
 set serverName5=Prison Server
 set serverName6=
 
+REM // DIRECTORIES
+set mainServerRootDirectory=C:\runningservers\servers
 
 set updateParamater=0
 set updateAddress=
@@ -82,6 +84,8 @@ REM // OFFICIAL MENU CODE STARTS HERE <-----------------------------------------
 :MENU
 color 0d
 cls
+echo.
+echo Connected to: %mainServerRootDirectory%
 echo.
 echo ==================================================
 echo =            YULXVOL SERVER MANAGER              =
